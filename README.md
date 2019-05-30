@@ -8,7 +8,6 @@ This will define sites and definition of F5 configuration backups.
     * midnight at Friday (So friday night going into sat)
     * File format : $(hostname)-hhmm-mmddyy.ucs
 
-___
 ## cli command to backup
 ```
 tmsh save sys ucs $(echo $HOSTNAME | cut -d'.' -f1)-$(date +%H%M-%m%d%y)
@@ -20,4 +19,4 @@ tmsh load /sys ucs <path/to/UCS> no-license
 ```
 ___
 Ref
-[https://support.f5.com/csp/article/K13132]
+https://support.f5.com/csp/article/K13132
